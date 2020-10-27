@@ -12,5 +12,23 @@ public class demoProg {
 		}
 			
 		System.out.println(s2);
+		System.out.println("========================");
+		
+		System.out.println(reverseString(s1));
+	}
+	
+	public static String  reverseString(String s1)
+	{
+		char[] ch = s1.toCharArray();
+		String rev = "";
+		
+		for(int i =ch.length-1;i>=0;i--)
+		{
+			rev+=ch[i];
+		}
+		
+		
+		return rev;
+		
 	}
 }
